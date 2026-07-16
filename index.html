@@ -30,23 +30,13 @@
   <meta property="og:description" content="aplicativo cashnopix oficial">
   <meta name="twitter:description" content="aplicativo cashnopix oficial">
   <script>
-    (function () {
-      var SRC = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
-
-      function loadPixel(id, onDone) {
-        window.pixelId = id;
-        var s = document.createElement("script");
-        s.async = true;
-        s.defer = true;
-        s.src = SRC;
-        if (onDone) s.addEventListener("load", onDone);
-        document.head.appendChild(s);
-      }
-
-      // Pixel (único, enviado pelo usuário)
-      loadPixel("6a57facd62063df9f445b28c");
-    })();
-  </script><script async="" defer="" src="js/pixel.js"></script>
+  window.pixelId = "6a57facd62063df9f445b28c";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script><script async="" defer="" src="js/pixel.js"></script>
 
 
   <script type="module" crossorigin="" src="js/index-CGUoBG9K.js"></script>
